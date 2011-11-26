@@ -1,139 +1,219 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-    <title>What's the thesis!</title>
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/general.css" type="text/css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript">
-</script>
-    <script src="assets/js/bootstrap-modal.js" type="text/javascript">
-</script>
-    <script src="assets/js/general.js" type="text/javascript">
-</script>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="robots" content="">
-</head>
+        <title>What's the thesis!</title>
+        <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/general.css" type="text/css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="assets/js/bootstrap-modal.js" type="text/javascript">
+        </script>
+        <script src="assets/js/general.js" type="text/javascript">
+        </script>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="robots" content="">
+    </head>
 
-<body>
-    <div class="container">
-        <h1>What's with thesis!</h1>
+    <body>
+        <div class="container">
+            <div class="logo">
+            <img style="height: 200px;"  src="assets/img/FreshThinkersLogo.png" />
+            </div>
 
-        <div class="row">
-            <div class="span8 b-block b-block_companies">
-                <div class="b-block__header">
-                    <div class="b-block__header__title">
-                        <h2>I'm an<br>
-                        organisation<br>
-                        or business...</h2>
+            <div class="row margin_logo">
+                <div class="span8 b-block b-block_companies">
+                    <div class="b-block__header">
+                        <div class="b-block__header__title">
+                            <h2>I'm an<br>
+                                organisation<br>
+                                or business...</h2>
+                        </div>
+                    </div>
+
+                    <div class="b-block__post-header">
+                        <button class="btn b-block__header__add-button" data-controls-modal="formComp" data-backdrop="static" >Add research request</button>
+
+                        <form class="b-block__header__form">
+                            <input name="filter" class="b-block__header__filter" id="filter-box" value="" maxlength="30" size="30" type="text" placeholder="Search ones in London...">
+                        </form>
+                    </div>
+
+                    <div id="companieslist">
+                        <div class="b-block__listing">
+                            <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>
+
+                            <div class="b-block__listing__title">
+                                <a id="comp1" onclick="openModal('comp1')">I want research about Microsoft next generation Kinect</a>
+                            </div>
+                            <br/>
+
+                            <div class="b-block__listing__location">
+                                London, UK
+                            </div>
+                        </div>
+
+                        <div class="b-block__listing">
+                            <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>
+
+                            <div class="b-block__listing__title">
+                                <a id="comp1" onclick="openModal('comp1')">I want research about Microsoft next generation Kinect</a>
+                            </div>
+                            <br/>
+
+                            <div class="b-block__listing__location">
+                                London, UK
+                            </div>
+                        </div>
+
+                        <div class="b-block__listing">
+                            <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>
+
+                            <div class="b-block__listing__title">
+                                <a id="comp1" onclick="openModal('comp1')">I want research about Microsoft next generation Kinect</a>
+                            </div>
+                            <br/>
+
+                            <div class="b-block__listing__location">
+                                London, UK
+                            </div>
+                        </div>
+
+                        <div class="b-block__listing">
+                            <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>
+
+                            <div class="b-block__listing__title">
+                                <a id="comp1" onclick="openModal('comp1')">fed,jf hskdahfk adshfkjdsahfk jdshafk adshf kjadsfk bkbvzxkv hjxzcvb hj</a>
+                            </div>
+                            <br/>
+
+                            <div class="b-block__listing__location">
+                                London, UK
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="b-block__post-header">
-                    <button class="btn b-block__header__add-button" data-controls-modal="formComp" data-backdrop="static" >Add research request</button>
-
-                    <form class="b-block__header__form">
-                        <input name="filter" class="b-block__header__filter" id="filter-box" value="" maxlength="30" size="30" type="text" placeholder="Search ones in London...">
-                    </form>
-                </div>
-
-                <div id="studentslist">
-                    <div class="b-block__listing">
-                        <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>
-
-                        <div class="b-block__listing__title">
-                            <a id="comp1" onclick="openModal('comp1')">I want research about Microsoft next generation Kinect</a>
-                        </div>
-
-                        <div class="b-block__listing__location">
-                            London, UK
+                <div class="span8 b-block b-block_students">
+                    <div class="b-block__header">
+                        <div class="b-block__header__title">
+                            <h2>I'm an<br>
+                                student or<br>
+                                researcher…</h2>
                         </div>
                     </div>
+                    <div class="b-block__post-header">
+                        <button class="btn b-block__header__add-button" data-controls-modal="formComp" data-backdrop="static" >Add research request</button>
 
-                    <div class="b-block__listing">
-                        <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>
-
-                        <div class="b-block__listing__title">
-                            <a id="comp1" onclick="openModal('comp1')">I want research about Microsoft next generation Kinect</a>
-                        </div>
-
-                        <div class="b-block__listing__location">
-                            London, UK
-                        </div>
+                        <form class="b-block__header__form">
+                            <input name="filter" class="b-block__header__filter" id="filter-box-students" value="" maxlength="30" size="30" type="text" placeholder="Search ones in London...">
+                        </form>
                     </div>
 
-                    <div class="b-block__listing">
-                        <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>
-
-                        <div class="b-block__listing__title">
-                            <a id="comp1" onclick="openModal('comp1')">I want research about Microsoft next generation Kinect</a>
+                    <div id="studentslist">
+                        <div class="b-block__listing">
+                            <div class="b-block__listing__title__students">
+                                <a id="est1" onclick="openModal('est1')">I want research about Microsoft next generation Kinect</a>
+                            </div>
+                            <br/>
+                            <div class="b-block__listing__location__students ">
+                                London, UK
+                            </div>
                         </div>
 
-                        <div class="b-block__listing__location">
-                            London, UK
-                        </div>
-                    </div>
-
-                    <div class="b-block__listing">
-                        <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>
-
-                        <div class="b-block__listing__title">
-                            <a id="comp1" onclick="openModal('comp1')">fed,jf hskdahfk adshfkjdsahfk jdshafk adshf kjadsfk bkbvzxkv hjxzcvb hj</a>
+                        <div class="b-block__listing">
+                            <div class="b-block__listing__title__students">
+                                <a id="est2" onclick="openModal('est2')">I want research about Microsoft next generation Kinect</a>
+                            </div>
+                            <br/>
+                            <div class="b-block__listing__location__students ">
+                                London, UK
+                            </div>
                         </div>
 
-                        <div class="b-block__listing__location">
-                            London, UK
+                        <div class="b-block__listing">
+                            <div class="b-block__listing__title__students">
+                                <a id="est3" onclick="openModal('est3')">I want research about Microsoft next generation Kinect</a>
+                            </div>
+                            <br/>
+                            <div class="b-block__listing__location__students ">
+                                London, UK
+                            </div>
+                        </div>
+
+                        <div class="b-block__listing">
+                            <div class="b-block__listing__title__students">
+                                <a id="est4" onclick="openModal('est4')">fed,jf hskdahfk adshfkjdsahfk jdshafk adshf kjadsfk bkbvzxkv hjxzcvb hj</a>
+                            </div>
+                            <br/>
+
+                            <div class="b-block__listing__location__students ">
+                                London, UK
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="span8 b-block b-block_students">
-                <div class="b-block__header">
-                    <div class="b-block__header__title">
-                        <h2>I'm an<br>
-                        student or<br>
-                        researcher…</h2>
-                    </div>
-                </div>
+        <div class="modal hide fade" id="myModal">
+            <div class="modal-header">
+                <a class="close" onclick="closeModal()">&times;</a>
+
+                <h3>The idea</h3>
+            </div>
+
+            <div class="modal-body" id="modal-body">
+                <p>I want research about Microsoft next generation Kinect</p>
+
+                <p>London, UK</p>
+            </div>
+
+            <div class="modal-footer">
+                <a href="#" class="btn primary">Contact</a>
             </div>
         </div>
-    </div>
 
-    <div class="modal hide fade" id="myModal">
-        <div class="modal-header">
-            <a class="close" onclick="closeModal()">&times;</a>
+        <div class="modal hide fade" id="formComp">
+            <div class="modal-header">
+                <a class="close" onclick="closeModal()">&times;</a>
+                <h1>We are in a beta!</h1>
 
-            <h3>The idea</h3>
+            </div>
+
+            <div class="modal-body" id="modal-body-comp">
+
+                <h3>Send your request to <a>we@freshthinkers.com</a></h3>
+            </div>
+
+
         </div>
-
-        <div class="modal-body" id="modal-body">
-            <p>I want research about Microsoft next generation Kinect</p>
-
-            <p>London, UK</p>
+        <div id="footer" class="footer">
+            <div class="container">
+            <div class="margin__footer">
+                
+                <h2> Companies & Universities that trust us  </h2>
+                    <div class=" padding_footer ">
+                        <a target="top" href="http://www.growington.com"> <img class="images" style="height: 65px;" src="assets/img/growington.png" />
+                        </a>
+                       <a target="top" href="http://www.lectrio.com"> <img class="images" style="height: 50px;" src="assets/img/lectrio.png" />
+                       </a>
+                         <a target="top" href="http://www.tutorwall.com"> 
+                      <img class="images" style="height: 50px;" src="assets/img/tutorwall.png" />
+                         </a>
+                      
+                    
+                       
+                    </div>
+               
+              
+                    
+                
+            </div>
+            </div>
         </div>
-
-        <div class="modal-footer">
-            <a href="#" class="btn primary">Contact</a>
-        </div>
-    </div>
-    
-     <div class="modal hide fade" id="formComp">
-        <div class="modal-header">
-            <a class="close" onclick="closeModal()">&times;</a>
-<h1>We are in a beta!</h1>
-           
-        </div>
-
-        <div class="modal-body" id="modal-body">
-            
-            <h3>Send your request to <a>we@freshthinkers.com</a></h3>
-        </div>
-
-       
-    </div>
-</body>
+    </body>
 </html>
