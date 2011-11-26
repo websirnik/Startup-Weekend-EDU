@@ -7,98 +7,117 @@
     <title>What's the thesis!</title>
     <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/general.css" type="text/css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript">
+</script>
+    <script src="assets/js/bootstrap-modal.js" type="text/javascript">
+</script>
+    <script src="assets/js/general.js" type="text/javascript">
+</script>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="robots" content="">
-    
-  
-        <script type="text/javascript">
-            $(document).ready(function()
-			{
-				$('#filter-box').keyup(function()
-				{
-					searchlist($(this).val());
-				});
-			});
-			function searchlist(inputVal)
-			{
-				var list = $('#studentslist');
-				list.find('div').each(function(index, row)
-				{
-					var allCells = $(row).find('div');
-					if(allCells.length > 0)
-					{
-						var found = false;
-						allCells.each(function(index, td)
-						{
-							var regExp = new RegExp(inputVal, 'i');
-							if(regExp.test($(td).text()))
-							{
-								found = true;
-								return false;
-							}
-						});
-						if(found == true)$(row).show();else $(row).hide();
-					}
-				});
-			}
-            
-        </script>
-
 </head>
 
 <body>
-    <!--div class="topbar">
-      <div class="topbar-inner">
-        <div class="container-fluid">
-          <a class="brand" href="#">What's the thesis!</a>
-
-          <p class="pull-right">Logged in as <a href="#">Company's name</a></p>
-        </div>
-      </div>
-    </div-->
-
     <div class="container">
         <h1>What's with thesis!</h1>
 
         <div class="row">
             <div class="span8 b-block b-block_companies">
-                <div class="b-block__title">
-                    <h2>I'm an<br/>organisation<br/> or business</h2>
-                    <input name="filter" id="filter-box" value="" maxlength="30" size="30" type="text" placeholder="Search ones in London...">
+                <div class="b-block__header">
+                    <div class="b-block__header__title">
+                        <h2>I'm an<br>
+                        organisation<br>
+                        or business...</h2>
+                    </div>
+                </div>
 
-<button class="btn primary">Add an research request</button>
+                <div class="b-block__post-header">
+                    <button class="btn b-block__header__add-button">Add research request</button>
+
+                    <form class="b-block__header__form">
+                        <input name="filter" class="b-block__header__filter" id="filter-box" value="" maxlength="30" size="30" type="text" placeholder="Search ones in London...">
+                    </form>
                 </div>
-                        <div id="studentslist">
-                <div class="b-block__listing">
-                    <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>                    
-                    <div class="b-block__listing__title">I want research about Microsoft next generation Kinect</div>
-                    <div class="b-block__listing__location">London, UK</div>
+
+                <div id="studentslist">
+                    <div class="b-block__listing">
+                        <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>
+
+                        <div class="b-block__listing__title">
+                            <a id="comp1" onclick="openModal('comp1')">I want research about Microsoft next generation Kinect</a>
+                        </div>
+
+                        <div class="b-block__listing__location">
+                            London, UK
+                        </div>
+                    </div>
+
+                    <div class="b-block__listing">
+                        <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>
+
+                        <div class="b-block__listing__title">
+                            <a id="comp1" onclick="openModal('comp1')">I want research about Microsoft next generation Kinect</a>
+                        </div>
+
+                        <div class="b-block__listing__location">
+                            London, UK
+                        </div>
+                    </div>
+
+                    <div class="b-block__listing">
+                        <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>
+
+                        <div class="b-block__listing__title">
+                            <a id="comp1" onclick="openModal('comp1')">I want research about Microsoft next generation Kinect</a>
+                        </div>
+
+                        <div class="b-block__listing__location">
+                            London, UK
+                        </div>
+                    </div>
+
+                    <div class="b-block__listing">
+                        <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>
+
+                        <div class="b-block__listing__title">
+                            <a id="comp1" onclick="openModal('comp1')">fed,jf hskdahfk adshfkjdsahfk jdshafk adshf kjadsfk bkbvzxkv hjxzcvb hj</a>
+                        </div>
+
+                        <div class="b-block__listing__location">
+                            London, UK
+                        </div>
+                    </div>
                 </div>
-                <div class="b-block__listing">
-                    <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>                    
-                    <div class="b-block__listing__title">I want research about Microsoft next generation Kinect</div>
-                    <div class="b-block__listing__location">London, UK</div>
-                </div>                
-                <div class="b-block__listing">
-                    <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>                    
-                    <div class="b-block__listing__title">I want research about Microsoft next generation Kinect</div>
-                    <div class="b-block__listing__location">London, UK</div>
-                </div>   
-                                <div class="b-block__listing">
-                    <div class="b-block__listing__logo"><img class="thumbnail" src="http://placehold.it/50x50" alt=""></div>                    
-                    <div class="b-block__listing__title">fed,jf hskdahfk adshfkjdsahfk jdshafk adshf kjadsfk bkbvzxkv hjxzcvb hj</div>
-                    <div class="b-block__listing__location">London, UK</div>
-                </div>                
-         </div>       
             </div>
 
             <div class="span8 b-block b-block_students">
-                <div class="b-block__title">
-                    <h2>Students</h2>
+                <div class="b-block__header">
+                    <div class="b-block__header__title">
+                        <h2>I'm an<br>
+                        student or<br>
+                        researcher…</h2>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="modal hide fade" id="myModal">
+        <div class="modal-header">
+            <a class="close" onclick="closeModal()">&times;</a>
+
+            <h3>The idea</h3>
+        </div>
+
+        <div class="modal-body" id="modal-body">
+            <p>I want research about Microsoft next generation Kinect</p>
+
+            <p>London, UK</p>
+        </div>
+
+        <div class="modal-footer">
+            <a href="#" class="btn primary">Contact</a>
         </div>
     </div>
 </body>
