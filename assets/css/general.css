@@ -2,6 +2,17 @@ body {
     background-image: url(../img/square_bg.png);
 }
 
+a, a:visited {
+color: #388DFF;
+text-decoration: none;
+cursor: pointer;
+}
+
+a:hover {
+color: #388DFF;
+text-decoration: underline;
+}
+
 .b-block {
     padding-bottom: 0px;
     -webkit-border-radius: 10px;
@@ -69,7 +80,7 @@ border-bottom: 0px;
 
 .b-block__listing {
     overflow: hidden;
-margin: 0px 20px;
+	margin: 0px 20px;
     padding: 10px 0px;
     border-top: 1px solid #0b69b9;
     
@@ -81,7 +92,6 @@ margin: 0px 20px;
 
 .b-block__listing__title {
     margin-left: 60px;
-    color: #388DFF;
     font-size: 14px;
 }
 
