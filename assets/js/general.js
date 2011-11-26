@@ -2,6 +2,9 @@ $(document).ready(function() {
 	$("#myModal").modal({
 		backdrop: true
 	});
+        $("#formComp").modal({
+		backdrop: true
+	});
 	$('#filter-box').keyup(function() {
 		searchlist($(this).val());
 	});

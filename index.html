@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="b-block__post-header">
-                    <button class="btn b-block__header__add-button">Add research request</button>
+                    <button class="btn b-block__header__add-button" data-controls-modal="formComp" data-backdrop="static" >Add research request</button>
 
                     <form class="b-block__header__form">
                         <input name="filter" class="b-block__header__filter" id="filter-box" value="" maxlength="30" size="30" type="text" placeholder="Search ones in London...">
@@ -119,6 +119,21 @@
         <div class="modal-footer">
             <a href="#" class="btn primary">Contact</a>
         </div>
+    </div>
+    
+     <div class="modal hide fade" id="formComp">
+        <div class="modal-header">
+            <a class="close" onclick="closeModal()">&times;</a>
+<h1>We are in a beta!</h1>
+           
+        </div>
+
+        <div class="modal-body" id="modal-body">
+            
+            <h3>Send your request to <a>we@freshthinkers.com</a></h3>
+        </div>
+
+       
     </div>
 </body>
 </html>
