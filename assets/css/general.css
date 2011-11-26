@@ -1,0 +1,44 @@
+body {
+	background-image:url(../img/square_bg.png);
+}
+
+.b-block {
+	border-radius:20px;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border:1px solid #000;
+	background: #fff;
+}
+
+
+.b-block__title {
+	padding: 0px 0px 20px 20px;
+}
+
+.b-block__listing {
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	padding: 5px 10px;	
+}
+
+.b-block__listing__logo {
+	float: left;
+}
+
+.b-block__listing__title {
+
+}
+
+.b-block__listing__location {
+
+}
+
+.b-block__listing__date {
+
+}
+
+
+
+.span8{
+	width: 450px;
+}
