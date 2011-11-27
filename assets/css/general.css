@@ -13,6 +13,10 @@ color: #388DFF;
 text-decoration: underline;
 }
 
+.span8 {
+    width: 450px;
+}
+
 .b-block {
     padding-bottom: 0px;
     -webkit-border-radius: 10px;
@@ -117,27 +121,19 @@ border-bottom: 0px;
 
 }
 
-.span8 {
-    width: 450px;
-}
-.footer{
-text-align: center;
-    margin: 20px;
-}
-.margin__footer{
-    margin: 20px;
+
+.b-footer{
+	text-align: center;
+    margin-top: 40px;
+        margin-bottom: 40px;
 }
 
-
-
-.padding_footer{
-    
-    margin:5px;
-    padding-left: -20px;
+.b-footer__logos{  
+    margin-top: 10px;
     
 }
-.images{
-    padding-left: 3px;
-    vertical-align: middle;
+.b-footer__logos img{  
+    padding: 0 15px;
     
 }
+
